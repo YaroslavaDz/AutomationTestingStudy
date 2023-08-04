@@ -55,3 +55,6 @@ class Database:
         self.cursor.execute(query)
         record = self.cursor.fetchall()
         return record
+
+    def insert_customer(self, customer_id, name, address, city, postal_code, country):
+        query = f''
